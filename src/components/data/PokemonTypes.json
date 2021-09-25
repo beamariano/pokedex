@@ -1,0 +1,51 @@
+[
+  { "type": "All_Types" },
+  {
+    "type": "Normal"
+  },
+  {
+    "type": "Fire"
+  },
+  {
+    "type": "Water"
+  },
+  {
+    "type": "Electric"
+  },
+  {
+    "type": "Grass"
+  },
+  {
+    "type": "Ice"
+  },
+  {
+    "type": "Fighting"
+  },
+  {
+    "type": "Poison"
+  },
+  {
+    "type": "Ground"
+  },
+  {
+    "type": "Flying"
+  },
+  {
+    "type": "Bug"
+  },
+  {
+    "type": "Rock"
+  },
+  {
+    "type": "Ghost"
+  },
+  {
+    "type": "Dark"
+  },
+  {
+    "type": "Steel"
+  },
+  {
+    "type": "Fairy"
+  }
+]
