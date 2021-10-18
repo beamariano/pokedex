@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Route, Link } from "react-router-dom";
-import App from "../App";
-
-import Button from "react-bootstrap/Button";
+import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import CloseButton from "react-bootstrap/CloseButton";
 
 const PokemonBox = (props) => {
   const [show, setShow] = useState(false);

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Route, Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import PokemonBox from "./components/PokemonBox";
@@ -28,6 +28,7 @@ const App = () => {
     if (item.types.includes(selectedType)) {
       return item;
     }
+    return "error";
   });
 
   return (
@@ -38,8 +39,9 @@ const App = () => {
         </Link>
         <div className="top-container">
           <div className="type-container">
-            {pokemonTypes.map((props) => (
+            {pokemonTypes.map((props, index) => (
               <button
+                key={index}
                 className="type-btn"
                 value={props.type}
                 id={props.type}
@@ -56,13 +58,14 @@ const App = () => {
         <div className="main-container">
           <div className="pokemon-display">
             <div className="pokemon-box-container">
-              {showItems.length == 0 ? (
+              {showItems.length === 0 ? (
                 <div className="empty-display">
                   <p>That's weird... No Pokemons found!</p>
                 </div>
               ) : (
-                showItems.map((pokemon) => (
+                showItems.map((pokemon, index) => (
                   <PokemonBox
+                    key={index}
                     id={pokemon.ntnlnum}
                     name={pokemon.name}
                     types={pokemon.types.join(" / ")}

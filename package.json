@@ -2,7 +2,7 @@
   "name": "project3-pokemon-redux",
   "version": "0.1.0",
   "private": true,
- "engines": {
+  "engines": {
     "node": "16.x"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^3.4.4",
     "redux": "^4.1.1",
     "web-vitals": "^1.0.1"
   },
